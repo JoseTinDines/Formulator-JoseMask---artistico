@@ -1,0 +1,88 @@
+body {
+  font-family: "Georgia", serif;
+  background: #f5f3ef;
+  color: #2c2c2c;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #d9c9b0;
+  padding: 20px;
+  text-align: center;
+  border-bottom: 3px solid #a0896d;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0;
+  color: #3e2f20;
+}
+
+h2 {
+  font-size: 1.1em;
+  color: #5c4a37;
+  margin: 0;
+}
+
+section {
+  padding: 20px;
+  margin: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: white;
+}
+
+#estanteria {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+#estanteria img {
+  width: 50px;
+  height: 80px;
+  object-fit: contain;
+  opacity: 0.6;
+  transition: opacity 0.3s, transform 0.3s;
+}
+
+#estanteria img.activo {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+#ingredientes .ingrediente {
+  border: 1px solid #ddd;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.fake-premium {
+  color: #aa0000;
+  font-weight: bold;
+}
+
+#barras {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.barra {
+  height: 20px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  background: #eee;
+}
+
+.barra span {
+  display: block;
+  height: 100%;
+  width: 0%;
+  transition: width 0.5s, background 0.5s;
+}
